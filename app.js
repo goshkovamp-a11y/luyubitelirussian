@@ -55,7 +55,7 @@ const sectionsData = {
       <a href="https://vkvideo.ru/video-60394803_456246915?t=36s">ЖМИ!</a>
     </h3>
   `
-}
+},
   dictionary: {
     title: "🗣 БОЛЬШОЙ СЛОВАРЬ",
     short: "Обсуждаем книги, фильмы, современный сленг и всё, что делает язык живым. Делимся впечатлениями и новыми словечками!",
@@ -127,6 +127,7 @@ function openSection(section) {
     menu.style.display = "flex";
   });
 }
+
 
 
 

@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  font-family: system-ui, Arial, sans-serif;
+  background: #f7f7f7;
+  color: #222;
+}
+
+#app {
+  padding: 16px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+button {
+  padding: 14px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: none;
+  background: #0057ff;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #003fcc;
+}
+
+#content {
+  margin-top: 24px;
+  padding: 16px;
+  background: white;
+  border-radius: 10px;
+  min-height: 120px;
+}

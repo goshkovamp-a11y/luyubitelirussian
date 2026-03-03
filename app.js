@@ -42,24 +42,21 @@ const sectionsData = {
     `
   },
   games: {
-    title: "🎮 СЛОВОЗОР",
-    short: "Игры для ума и души: викторины, квизы, словесные батлы и челленджи.",
-    long: `
-      <h3>КТО ТУТ ГЛАВНЫЙ ЭРУДИТ?</h3>
-      <p>Про русский язык 😊</p>
-      <ul>
-        </ul>
-        
-    <h3>Мы приготовили видео. ЖМИ!</h3>
-    <iframe 
-      src="https://vk.com/video-60394803_456246915?autoplay=0" 
-      width="560" 
-      height="315" 
-      frameborder="0" 
-      allowfullscreen>
-    </iframe>
-    `
-  },
+  title: "🎮 СЛОВОЗОР",
+  short: "Игры для ума и души: викторины, квизы, словесные батлы и челленджи.",
+  long: `
+    <h3>КТО ТУТ ГЛАВНЫЙ ЭРУДИТ?</h3>
+    <p>Про русский язык 😊</p>
+    <ul>
+      <!-- примеры пунктов можно добавить -->
+    </ul>
+
+    <h3>Мы приготовили видео. 
+      <a href="https://vkvideo.ru/video-60394803_456246915?t=36s" target="_blank" 
+         style="color: #8B5E3C; text-decoration: underline; cursor: pointer;">ЖМИ!</a>
+    </h3>
+  `
+}
   dictionary: {
     title: "🗣 БОЛЬШОЙ СЛОВАРЬ",
     short: "Обсуждаем книги, фильмы, современный сленг и всё, что делает язык живым. Делимся впечатлениями и новыми словечками!",
@@ -131,4 +128,5 @@ function openSection(section) {
     menu.style.display = "flex";
   });
 }
+
 

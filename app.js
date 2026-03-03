@@ -52,7 +52,7 @@ const sectionsData = {
     </ul>
 
     <h3>Мы приготовили видео. 
-      <a href="https://vkvideo.ru/video-60394803_456246915?t=36s">ЖМИ!</a>
+      <a href="https://vkvideo.ru/video-60394803_456246915?t=36s">➡️ЖМИ!</a>
     </h3>
   `
 },
@@ -127,6 +127,7 @@ function openSection(section) {
     menu.style.display = "flex";
   });
 }
+
 
 
 

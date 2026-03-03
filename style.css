@@ -25,13 +25,13 @@ button {
   font-size: 16px;
   border-radius: 10px;
   border: none;
-  background: #0057ff;
+  background: #8B5E3C;
   color: #fff;
   cursor: pointer;
 }
 
 button:hover {
-  background: #003fcc;
+  background: #6f472d;
 }
 
 #content {
@@ -41,3 +41,4 @@ button:hover {
   border-radius: 10px;
   min-height: 120px;
 }
+

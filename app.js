@@ -11,8 +11,14 @@ function openSection(section) {
 
   switch (section) {
     case "mistakes":
-      content.innerHTML = "<h2>⚠️ НА ГРАБЛЯХ</h2><p>Раздел в разработке</p>";
-      break;
+  content.innerHTML = `
+    <h2>⚠️ НА ГРАБЛЯХ</h2>
+    <p>
+      Учимся на чужих ошибках, чтобы не совершать свои. 
+      Смеёмся над забавными ляпами и запоминаем правильные варианты.
+    </p>
+  `;
+  break;
 
     case "grammar":
       content.innerHTML = "<h2>🔍 ГРАМОТЕЙКА</h2><p>Раздел в разработке</p>";
@@ -27,3 +33,4 @@ function openSection(section) {
       break;
   }
 }
+

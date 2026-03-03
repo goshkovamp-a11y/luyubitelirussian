@@ -100,24 +100,34 @@ function openSection(section) {
   const sectionDiv = document.getElementById("section");
   const detailsDiv = document.getElementById("details");
 
-  // скрыть меню кнопок
+  // скрываем меню
   menu.style.display = "none";
 
-  // показать заголовок раздела и краткое описание
   const data = sectionsData[section];
+
+  // выводим заголовок, краткое описание, кнопку ПОДРОБНЕЕ и кнопку НАЗАД
   sectionDiv.innerHTML = `
     <h2>${data.title}</h2>
     <p>${data.short}</p>
     <button id="moreBtn">ПОДРОБНЕЕ</button>
+    <button id="backBtn">НАЗАД</button>
   `;
 
-  detailsDiv.style.display = "none"; // скрыть старый контент
+  detailsDiv.style.display = "none";
 
-  // добавить обработчик кнопки "ПОДРОБНЕЕ"
+  // ПОДРОБНЕЕ
   const moreBtn = document.getElementById("moreBtn");
   moreBtn.addEventListener("click", () => {
     detailsDiv.style.display = "block";
     detailsDiv.innerHTML = data.long;
   });
-}
 
+  // НАЗАД
+  const backBtn = document.getElementById("backBtn");
+  backBtn.addEventListener("click", () => {
+    sectionDiv.innerHTML = "";
+    detailsDiv.innerHTML = "";
+    detailsDiv.style.display = "none";
+    menu.style.display = "flex";
+  });
+}

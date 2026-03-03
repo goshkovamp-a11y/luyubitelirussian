@@ -15,30 +15,62 @@ h1 {
 }
 
 .menu {
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-direction: column;
   gap: 12px;
+  margin-bottom: 20px;
 }
 
 button {
-  padding: 14px;
+  padding: 12px;
   font-size: 16px;
   border-radius: 10px;
   border: none;
   background: #8B5E3C;
   color: #fff;
   cursor: pointer;
+  transition: background 0.3s;
 }
 
 button:hover {
   background: #6f472d;
 }
 
-#content {
-  margin-top: 24px;
+#section {
+  margin-top: 20px;
   padding: 16px;
   background: white;
   border-radius: 10px;
-  min-height: 120px;
 }
 
+#details {
+  margin-top: 20px;
+  padding: 16px;
+  background: #fff9f0;
+  border-radius: 10px;
+  display: none;
+}
+/* плавное появление элементов */
+.fade-in {
+  animation: fadeIn 0.5s ease forwards;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(10px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* подсветка активного раздела */
+button.active {
+  background: #d9986a;
+  color: #fff;
+}
+
+/* кнопка "Назад" */
+#backBtn {
+  margin-top: 12px;
+  background: #555;
+}
+#backBtn:hover {
+  background: #333;
+}

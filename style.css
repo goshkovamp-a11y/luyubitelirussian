@@ -50,6 +50,10 @@ button:hover {
   border-radius: 10px;
   display: none;
 }
+ul {
+  list-style: none; /* убираем bullets */
+  padding-left: 0;  /* убираем отступ слева */
+}
 /* плавное появление элементов */
 .fade-in {
   animation: fadeIn 0.5s ease forwards;
@@ -91,3 +95,4 @@ iframe {
   width: 100%;
   height: 100%;
 }
+
